@@ -8,5 +8,88 @@
     <maven.compiler.target>21</maven.compiler.target>   
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <spring-web-version>4.3.9.RELEASE</spring-web-version>
+    <jackson-version>2.8.9</jackson-version>
+    <jackson-threetenbp-version>2.6.4</jackson-threetenbp-version>
+    <maven-plugin-version>1.0.0</maven-plugin-version>
+
+
   </properties>
+    <dependencies>
+    <!-- HTTP client: Spring RestTemplate -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-web</artifactId>
+      <version>${spring-web-version}</version>
+    </dependency>
+   
+    <dependency>
+    	<groupId>io.springfox</groupId>
+    	<artifactId>springfox-boot-starter</artifactId>
+    	<version>3.0.0</version>
+    </dependency> 
+   
+    <!-- Dependencia de Spring Web para RestTemplate -->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+        <version>3.0.0</version>
+    </dependency>
+    
+	<dependency>
+	    <groupId>jakarta.annotation</groupId>
+	    <artifactId>jakarta.annotation-api</artifactId>
+	    <version>1.3.5</version>
+	    <scope>compile</scope>
+	</dependency>
+        
+    <!-- JSON processing: jackson -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-core</artifactId>
+      <version>${jackson-version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-annotations</artifactId>
+      <version>${jackson-version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>${jackson-version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.jaxrs</groupId>
+      <artifactId>jackson-jaxrs-json-provider</artifactId>
+      <version>${jackson-version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.github.joschi.jackson</groupId>
+      <artifactId>jackson-datatype-threetenbp</artifactId>
+      <version>${jackson-threetenbp-version}</version>
+    </dependency>
+
+   
+    <!-- Dependencia de JUnit para pruebas -->
+    <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-api</artifactId>
+        <version>5.10.2</version>
+        <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>5.10.2</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-junit-jupiter</artifactId>
+      <version>5.11.0</version>
+      <scope>test</scope>
+    </dependency>
+    
+  </dependencies>
 </project>
