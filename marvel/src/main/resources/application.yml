@@ -1,0 +1,24 @@
+# Conversion to YAML from Properties formar report
+# Warnings:
+# - The yaml file had comments which are lost in the refactoring!
+spring:
+  application:
+    name: marvel
+  datasource:
+    url: jdbc:h2:mem:marveldb
+    username: mary
+    password: mary
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  sql:
+    init:
+      mode: always	
+  main:
+    lazy-initialization: true 
