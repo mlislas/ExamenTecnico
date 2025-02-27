@@ -28,4 +28,5 @@ public class MarvelController {
     public ResponseEntity<CharacterDataWrapper> getCharacterById(@PathVariable String id) {
         return ResponseEntity.ok(marvelApiService.getCharacterById(id));
     }
+    
 }

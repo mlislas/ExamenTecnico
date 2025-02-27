@@ -14,12 +14,21 @@ import java.time.LocalDateTime;
 	public class ConsultaLog {
 
 	    @Id
-	    @GeneratedValue(strategy = GenerationType.IDENTITY)
-	    private Long id;
+	    @GeneratedValue(strategy = GenerationType.UUID)
+	    private String id;
 
-	    private String endpoint;
+	    public String getId() {
+			return id;
+		}
+
+		public void setId(String id) {
+			this.id = id;
+		}
+
+		private String endpoint;
 	    private LocalDateTime fechaConsulta;
-
+	    private String usrLog;
+	 
 	    public ConsultaLog() {
 	    }
 
@@ -28,9 +37,7 @@ import java.time.LocalDateTime;
 	        this.fechaConsulta = fechaConsulta;
 	    }
 
-	    public Long getId() {
-	        return id;
-	    }
+
 
 	    public String getEndpoint() {
 	        return endpoint;
@@ -47,6 +54,14 @@ import java.time.LocalDateTime;
 	    public void setFechaConsulta(LocalDateTime fechaConsulta) {
 	        this.fechaConsulta = fechaConsulta;
 	    }
+
+		public String getUsrLog() {
+			return usrLog;
+		}
+
+		public void setUsrLog(String usrLog) {
+			this.usrLog = usrLog;
+		}
 	    
 	}
 
