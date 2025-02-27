@@ -22,3 +22,8 @@ spring:
       mode: always	
   main:
     lazy-initialization: true 
+marvel:
+  api:
+    public-key: dc447ee6fb03816e58f8772b02cf8d2f
+    private-key: 6908738ed9365147415738f47d69f1669ccf9691
+    base-url: https://gateway.marvel.com/v1/public/characters

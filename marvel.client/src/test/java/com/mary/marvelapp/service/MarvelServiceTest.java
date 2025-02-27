@@ -9,6 +9,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.web.client.RestTemplate;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 
@@ -22,6 +23,13 @@ public class MarvelServiceTest {
 	@InjectMocks
     private MarvelService marvelService;
 
+	@BeforeEach
+	public void inicializar() {
+		marvelService.baseUrl = "http://test.com";
+		marvelService.privateKey = "Key";
+		marvelService.publicKey = "pKey";
+	}
+	
 	@Test
     public void testGetMarvelCharacters() {
         // Configura el mock de RestTemplate para devolver un objeto ficticio de respuesta
