@@ -17,6 +17,9 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import static org.mockserver.model.MediaType.APPLICATION_JSON;
+
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
@@ -57,10 +60,10 @@ public class MarvelApiServiceTest {
 
 
         // Llamar al método real de MarvelApiService
-        CharacterDataWrapper response = marvelApiService.getCharacters();
+        List<?> response =  marvelApiService.getCharacters();
         // Validar que la respuesta no es nula
         assertNotNull(response);     
-        String characterStr = objectMapper.writeValueAsString(response.getData().getResults().getFirst());
+        String characterStr = objectMapper.writeValueAsString( response.getFirst());
         Character character = objectMapper.readValue(characterStr, Character.class);
         assertEquals("Spider-Man", character.getName());
     }

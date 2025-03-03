@@ -1,1 +1,8 @@
-<p>character-list works!</p>
+<div class="container">
+    <h2>Listado de Personajes</h2>
+    <ul class="list-group">
+      <li *ngFor="let character of characters" class="list-group-item" (click)="showDetails(character.id)">
+        {{ character.name }}
+      </li>
+    </ul>
+  </div>

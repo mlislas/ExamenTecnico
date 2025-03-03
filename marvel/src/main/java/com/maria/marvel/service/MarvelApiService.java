@@ -1,5 +1,7 @@
 package com.maria.marvel.service;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 import com.maria.marvel.repository.ConsultaLogRepository;
 import com.mary.marvelapp.service.MarvelService;
@@ -14,8 +16,8 @@ public class MarvelApiService {
         this.marvelService = marvelService;
     }
 
-    public CharacterDataWrapper getCharacters() {
-        return marvelService.getMarvelCharacters();
+    public List<?> getCharacters() {
+        return marvelService.getMarvelCharacters().getData().getResults();
     }
 
     public CharacterDataWrapper getCharacterById(String id) {
