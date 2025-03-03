@@ -1,0 +1,32 @@
+.dialog-content {
+    padding: 20px;
+  }
+
+ .custom-dialog-container .mat-dialog-container {
+    max-width: 70vw !important; /* Asegura que no se limite por defecto */
+    max-height: 70vh !important;
+    padding: 20px; /* Añade un padding opcional */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 768px) {
+    .custom-dialog-container .mat-dialog-container {
+      width: 90vw !important; /* Aumenta el ancho en móviles */
+      height: 90vh !important; /* Aumenta la altura en móviles */
+    }
+  }
+
+  img {
+    max-width: 100%;  /* La imagen no será más ancha que el contenedor */
+    max-height: 100%; /* Evita que la imagen sea más alta que el popup */
+    display: block;  /* Evita espacios extra */
+    margin: 0 auto;  /* Centra la imagen */
+    object-fit: contain; /* Mantiene la proporción sin recortar */
+  }
+
+  h4 {
+    font-weight: normal; /* Quita la negrita */
+  }
+  
