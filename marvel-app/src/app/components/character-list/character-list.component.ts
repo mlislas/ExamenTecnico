@@ -3,13 +3,13 @@ import { MarvelApiService } from '../../../services/marvel-api.service';
 import { CommonModule  } from '@angular/common'; 
 import { MatDialog } from '@angular/material/dialog';
 import { CharacterDetailsDialogComponent } from '../../character-details-dialog/character-details-dialog.component';
-
+import { RouterLink } from '@angular/router'; 
 
 @Component({
   selector: 'app-character-list',
   templateUrl: './character-list.component.html',
   styleUrls: ['./character-list.component.css'],
-  imports: [CommonModule ]
+  imports: [CommonModule, RouterLink ]
 })
 export class CharacterListComponent implements OnInit {
   characters: any[] = [];

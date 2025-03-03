@@ -1,7 +1,8 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
+import { CharacterListComponent } from '../app/components/character-list/character-list.component';
+import { BitacoraComponent } from './bitacora/bitacora.component';
 
 export const appRoutes: Routes = [
-  { path: '', component: HomeComponent },  // Ruta principal
-  // Agrega más rutas aquí si es necesario
+  { path: '', component: CharacterListComponent  },  // Ruta principal
+  { path: 'bitacora', component: BitacoraComponent }
 ];

@@ -25,7 +25,7 @@ export class MarvelApiService {
 
   getConsultationLog(): Observable<any> {
 
-    return this.http.get('http://localhost:8080/api/logs', { headers: this.headers });  // Ajusta la URL según tu API de logs
+    return this.http.get('http://localhost:8080/logs/listar', { headers: this.headers });  // Ajusta la URL según tu API de logs
     
   }
 
