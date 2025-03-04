@@ -7,7 +7,7 @@ Proyecto: marvel.client
 2.Desarrollo de una API REST que utiliza el JAR para consumir los servicios de Marvel y almacena la bitácora de consultas en una base de datos H2.
 Proyecto: marvel
 3.Desarrollo de un frontend en Angular para consumir la API REST.
-Proyecto MARVEL-APP
+Proyecto marvel-app
 
 ---------------------------------------------------------------------------------------------
 1.Creación de un JAR para consumir la API de Marvel
@@ -49,7 +49,7 @@ Pasos para ejecutar:
 
 
 ---------------------------------------------------------------------------------------------
-3. Desarrollo del Frontend en Angular
+3. Desarrollo del Frontend en Angular (marvel-app)
 Alcance:
 •Implementación con Angular.
 •Integración con la API REST creada en el punto 2.
