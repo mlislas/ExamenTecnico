@@ -1,13 +1,16 @@
 
 <div class="container">
-    <h2>Listado de Personajes</h2>
-    <ul class="list-group">
-      <li *ngFor="let character of characters" class="list-group-item" (click)="showDetails(character.id)">
-        {{ character.name }}
-      </li>
-    </ul>
-    <button [routerLink]="['/bitacora']" routerLinkActive="active">Ver Bitácora</button>
+  <h2>Listado de Personajes</h2>
+  <h4>Click en nombre del personaje (para ver detalle)</h4>
+  <ul class="list-group">
+    <li *ngFor="let character of characters" class="list-group-item" (click)="showDetails(character.id)">
+      {{ character.name }}
+    </li>
+  </ul>
 
+  <br> <!-- Espacio antes del botón -->
+
+  <button [routerLink]="['/bitacora']" routerLinkActive="active">Ver Bitácora</button>
 </div>
 
 

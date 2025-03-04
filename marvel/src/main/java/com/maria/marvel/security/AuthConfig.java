@@ -2,7 +2,6 @@ package com.maria.marvel.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.core.userdetails.User;
@@ -41,7 +40,7 @@ public class AuthConfig {
         http
             .cors()
             .and()
-            .csrf(csrf -> csrf.disable()) // Deshabilita CSRF si no necesitas protección contra ataques CSRF
+            .csrf(csrf -> csrf.disable()) // Deshabilita CSRF si no necesita protección contra ataques CSRF
             .authorizeHttpRequests(auth -> auth
                 .requestMatchers("/api/marvel/**").authenticated() // Protege solo las rutas específicas
                 .anyRequest().permitAll() // Permite acceso libre a todas las demás rutas

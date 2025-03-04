@@ -32,8 +32,8 @@ public class MarvelServiceTest {
 	
 	@Test
     public void testGetMarvelCharacters() {
-        // Configura el mock de RestTemplate para devolver un objeto ficticio de respuesta
-        CharacterDataWrapper mockResponse = new CharacterDataWrapper(); // Configura tu mockResponse aquí
+        // Configuración del mock de RestTemplate para devolver un objeto ficticio de respuesta
+        CharacterDataWrapper mockResponse = new CharacterDataWrapper(); 
         Mockito.when(restTemplate.getForObject(Mockito.anyString(), Mockito.eq(CharacterDataWrapper.class)))
                .thenReturn(mockResponse);
 

@@ -3,17 +3,19 @@
     <table class="table table-bordered">
       <thead>
         <tr>
-          <th>ID</th>
-          <th>Endpoint</th>
           <th>Fecha de Consulta</th>
+          <th>Usuario</th>
+          <th>EndPoint</th>
+          <th>ID</th>
         </tr>
       </thead>
       <tbody>
         <tr *ngFor="let registro of bitacora">
-          <td>{{ registro.id }}</td>
-          <td>{{ registro.endpoint }}</td>
           <td>{{ registro.fechaConsulta | date:'yyyy-MM-dd HH:mm:ss' }}</td>
+          <td>{{ registro.usrLog }}</td>          
+          <td>{{ registro.endpoint }}</td>
+          <td>{{ registro.id }}</td>
         </tr>
       </tbody>
     </table>
-  </div>
+</div>

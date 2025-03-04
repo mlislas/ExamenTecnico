@@ -7,7 +7,7 @@ import { CommonModule  } from '@angular/common';
   standalone: true,
   templateUrl: './bitacora.component.html',
   styleUrls: ['./bitacora.component.css'],
-  imports: [CommonModule ]
+  imports: [CommonModule]
 })
 export class BitacoraComponent implements OnInit {
   bitacora: any[] = [];

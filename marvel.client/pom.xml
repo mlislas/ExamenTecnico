@@ -12,8 +12,6 @@
     <jackson-version>2.8.9</jackson-version>
     <jackson-threetenbp-version>2.6.4</jackson-threetenbp-version>
     <maven-plugin-version>1.0.0</maven-plugin-version>
-
-
   </properties>
     <dependencies>
     <!-- HTTP client: Spring RestTemplate -->
@@ -69,8 +67,7 @@
       <artifactId>jackson-datatype-threetenbp</artifactId>
       <version>${jackson-threetenbp-version}</version>
     </dependency>
-
-   
+  
     <!-- Dependencia de JUnit para pruebas -->
     <dependency>
         <groupId>org.junit.jupiter</groupId>

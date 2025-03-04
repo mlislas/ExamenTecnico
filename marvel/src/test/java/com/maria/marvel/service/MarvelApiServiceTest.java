@@ -1,8 +1,6 @@
 package com.maria.marvel.service;
 
 import io.swagger.client.model.Character;
-import io.swagger.client.model.CharacterDataWrapper;
-
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

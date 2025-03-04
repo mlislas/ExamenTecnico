@@ -29,12 +29,6 @@ export class CharacterListComponent implements OnInit {
   showDetails(characterId: string): void {
 
     this.character = this.characters.find(c => c.id === characterId);
-  
-    //if (this.character) {
-    //  alert(`Detalles del personaje:\n\nNombre: ${this.character.name}\nDescripción: ${this.character.description}`);
-    //} else {
-    //  alert('Personaje no encontrado');
-    //}
 
     const dialogRef = this.dialog.open(CharacterDetailsDialogComponent, {
       data: this.character,

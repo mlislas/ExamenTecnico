@@ -10,10 +10,6 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 @Service
 public class MarvelService {
-
-    //private static final String PRIVATE_KEY = "6908738ed9365147415738f47d69f1669ccf9691";
-    //private static final String PUBLIC_KEY = "dc447ee6fb03816e58f8772b02cf8d2f";
-    //private static final String BASE_URL = "https://gateway.marvel.com/v1/public/characters";
     
     @Value("${marvel.api.private-key}")
     protected String privateKey;

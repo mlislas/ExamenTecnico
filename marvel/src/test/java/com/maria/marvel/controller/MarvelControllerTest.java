@@ -2,8 +2,6 @@
 package com.maria.marvel.controller;
 import static org.mockito.Mockito.*;
 
-import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
@@ -15,7 +13,6 @@ import org.springframework.http.ResponseEntity;
 
 import com.maria.marvel.service.MarvelApiService;
 
-import io.swagger.client.model.CharacterDataContainer;
 import io.swagger.client.model.CharacterDataWrapper;
 
 @ExtendWith(MockitoExtension.class)
