@@ -1,4 +1,6 @@
 README - Proyecto de Consumo de API de Marvel
+María León Islas - Marzo 2025
+
 
 Descripción General
 Este proyecto consta de tres módulos principales:

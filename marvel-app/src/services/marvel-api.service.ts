@@ -20,7 +20,7 @@ export class MarvelApiService {
   }
 
   getCharacterById(characterId: string): Observable<any> {
-    return this.http.get(`${this.apiUrl}/${characterId}`, { headers: this.headers });
+    return this.http.get(`${this.apiUrl}/characters/${characterId}`, { headers: this.headers });
   }
 
   getConsultationLog(): Observable<any> {
