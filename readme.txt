@@ -1,5 +1,6 @@
-README - Proyecto de Consumo de API de Marvel
+README - Proyecto de Consumo de API de Marvel  (Java 21)
 María León Islas - Marzo 2025
+
 
 
 Descripción General
