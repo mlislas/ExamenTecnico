@@ -48,7 +48,9 @@ Pasos para ejecutar:
 1.Clonar el repositorio y navegar al directorio del proyecto (marvel).
 2.Ejecutar el siguiente comando para compilar y ejecutar la API REST: 
 	mvn spring-boot:run
-	Acceder a la API en http://localhost:8080
+	Acceder a las APIs en Postman
+	http://localhost:8080/api/marvel/characters
+	http://localhost:8080/api/marvel/characters/1009144
 
 
 ---------------------------------------------------------------------------------------------
