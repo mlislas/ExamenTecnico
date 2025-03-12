@@ -1,3 +1,8 @@
+/**
+ * Esta clase LoggingAspect es un aspecto en Spring AOP que intercepta las ejecuciones de métodos dentro 
+ * de MarvelController para registrar logs de las consultas realizadas por los usuarios.
+ */
+
 package com.maria.marvel.aspect;
 import java.time.LocalDateTime;
 

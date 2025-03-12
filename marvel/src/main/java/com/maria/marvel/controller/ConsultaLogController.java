@@ -1,3 +1,12 @@
+/**
+ * Controlador REST que maneja los logs de consulta.
+ * Expone un endpoint GET para listar los logs (/logs/listar).
+ * Inyecta y usa un servicio (ConsultaLogService) para recuperar la información.
+ * Retorna los datos en JSON dentro de un ResponseEntity.
+ * Este código permite consultar los registros de logs desde la API.
+ * 
+ */
+
 package com.maria.marvel.controller;
 
 import org.springframework.web.bind.annotation.*;

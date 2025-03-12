@@ -1,3 +1,7 @@
+/**
+ * Esta clase configura la seguridad de la aplicación en Spring Security. Define la autenticación de usuarios, la política de acceso 
+ * a los endpoints y la configuración de CORS.
+ */
 package com.maria.marvel.security;
 
 import org.springframework.context.annotation.Bean;
